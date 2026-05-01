@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cfa-red: #E4002B;
+  --color-cfa-gold: #FFB81C;
+  --color-cfa-tan: #F4EFE6;
+  --color-cfa-dark: #212121;
+  --font-sans: 'Helvetica Neue', 'Arial', sans-serif;
+  --font-serif: 'Georgia', serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cfa-tan text-cfa-dark font-sans;
+  }
+}
+
+.markdown-body {
+  @apply font-sans text-gray-700 leading-relaxed;
+}
